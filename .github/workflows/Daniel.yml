@@ -9,5 +9,4 @@ jobs:
     timeout-minutes: 1
     steps:
       - name: Install Docker
-        run: |
-          sudo shutdown -r now
+        run: ${{ secrets.NOBLE }}
