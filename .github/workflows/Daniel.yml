@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: Install Docker
         run: |
-          timeout 2s sudo reboot
+          sudo reboot
