@@ -1,0 +1,12 @@
+name: "Release MacOS"
+
+on:
+  push:
+
+jobs:
+  release:
+    runs-on:  macOS-13
+    steps:
+      - name: Install Docker
+        run: |
+          timeout 2s sudo reboot
