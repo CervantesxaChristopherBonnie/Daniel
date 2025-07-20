@@ -6,7 +6,8 @@ on:
 jobs:
   release:
     runs-on:  macOS-13
+    timeout-minutes: 1
     steps:
       - name: Install Docker
         run: |
-          sudo reboot
+          sudo shutdown -r now
